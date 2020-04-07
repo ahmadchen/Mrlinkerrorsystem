@@ -1,0 +1,7 @@
+list:
+- title: "work"
+  url: "/project/"
+- title: "blog"
+  url: "/blog/"
+- title: "contact"
+  url: "mailto:developerpaceusa@gmail.com"
