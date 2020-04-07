@@ -1,0 +1,59 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+  <!--
+        # Author     : Pace Usa
+        # Email      : developerpaceusa@gmail.com
+        # LICENSE    : MIT (https://github.com/ahmadchen)
+  -->
+
+  {% if page.title %}<title>{{ page.title }} | {{ site.title }}</title>{% else %}<title>{{ site.title }} |
+    {{ site.description }}</title>{% endif %}
+
+  {% if site.theme_color %}
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta content="{{ site.theme_color }}" name="theme-color" />
+  <!-- Windows Phone -->
+  <meta content="{{ site.theme_color }}" name="msapplication-navbutton-color" />
+  <!-- iOS Safari -->
+  <meta content="{{ site.theme_color }}" name="apple-mobile-web-app-status-bar-style" />
+  {% endif %}
+
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" />
+
+  {% seo title=false %}
+
+  <script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "@type": "person",
+      "name": "Pace Usa",
+      "jobTitle": "Web Developer",
+      "height": "64",
+      "gender": "male",
+      "url": "http://ahmadchen.github.io",
+      "sameAs": [
+         "https://facebook.com/",
+         "https://github.com/ahmadchen",
+         "https://codepen.io/"
+      ],
+      "image": "https://ahmadchen.github.io/assets/images/anasrar-portfolio.png",
+      "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "Jl. Asrama Palad",
+         "addressLocality": "Bogor",
+         "addressRegion": "West Java",
+         "postalCode": "16917",
+         "addressCountry": "Indonesia"
+      },
+      "email": "mynameanasrar@gmail.com",
+      "birthPlace": "Central Java",
+      "nationality": "Indonesia"
+    }
+    </script>
+
+</head>
